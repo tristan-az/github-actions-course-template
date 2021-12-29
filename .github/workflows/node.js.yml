@@ -18,6 +18,10 @@ jobs:
         run: |
           npm install
           npm run
+      - uses: actions/upload-artifact@master
+        with: 
+          name: webpack artifacts
+          path: public/
   
   test:
     
